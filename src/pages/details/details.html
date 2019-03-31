@@ -1,0 +1,55 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align:center">User Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-label floating>ID</ion-label>
+    <ion-input [(ngModel)]="id" disabled></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Latitute</ion-label>
+    <ion-input [(ngModel)]="latitute"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Longitute</ion-label>
+    <ion-input [(ngModel)]="longitute"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Address</ion-label>
+    <ion-input [(ngModel)]="address"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Mobile</ion-label>
+    <ion-input [(ngModel)]="mobile"></ion-input>
+  </ion-item>
+  <ion-list>
+  <ion-item>
+    <ion-label>Sex</ion-label>
+    <ion-select [(ngModel)]="sex">
+      <ion-option value="M">Male</ion-option>
+      <ion-option value="F">Female</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+  <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="dob"></ion-datetime>
+    </ion-item>    
+  <ion-item>
+    <ion-label floating>Age</ion-label>
+    <ion-input [(ngModel)]="age"></ion-input>
+  </ion-item>
+  <br>
+  <button ion-button full (click)="submit()">Submit</button>
+</ion-list>
+</ion-content>

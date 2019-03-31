@@ -15,6 +15,20 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 .transparent-body {
-    background: none transparent !important;
-    opacity: 0 !important;
+  background: none transparent !important;
+  opacity: 0 !important;
+}
+
+ion-header {
+  .toolbar {
+    // position: absolute;
+
+    .toolbar-background {
+      background-image: linear-gradient(#2883d2, #3cb1bb);
+      
+    }
+    .toolbar-title {
+      color: #eaf5fb;
+    }
   }
+}

@@ -1,0 +1,39 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list> 
+    <div *ngFor="let item of items ">
+  <ion-item>Adress: {{item.address}}</ion-item>
+  <ion-item>Age: {{item.age}}</ion-item>
+  <ion-item>Allergies: {{item.allergies}}</ion-item>
+  <ion-item>Blood Group: {{item.bg}}</ion-item>
+  <ion-item>BMI: {{item.bmi}}</ion-item>
+  <ion-item>Cholestrol: {{item.cholestrol}}</ion-item>
+ <ion-item>DOB: {{item.dob}}</ion-item>
+ <ion-item>Email: {{item.email}}</ion-item>
+ <ion-item>Haemoglobin: {{item.haemoglobin}}</ion-item>
+ <ion-item>Heart Disease: {{item.heart}}</ion-item>
+ <ion-item>Height: {{item.height}}</ion-item>
+ <ion-item>Latitute: {{item.latitute}}</ion-item>
+ <ion-item>Longitute: {{item.longitute}}</ion-item>
+ <ion-item>Mobile: {{item.mobile}}</ion-item>
+ <ion-item>Name: {{item.name}}</ion-item>
+ <ion-item>Previous Disease{{item.pd}}</ion-item>
+ <ion-item>RBC level: {{item.rbc}}</ion-item>
+ <ion-item>WBC level: {{item.wbc}}</ion-item>
+ <ion-item>Weight: {{item.weight}}</ion-item>
+ <ion-item>Sex: {{item.sex}}</ion-item>
+ <ion-item>Sugar level: {{item.sugar}}</ion-item>
+ </div>
+    </ion-list>
+</ion-content>

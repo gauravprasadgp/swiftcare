@@ -1,0 +1,45 @@
+<!--
+Generated template for the HealthPage page.
+
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
+-->
+<ion-header>
+<ion-navbar>
+<ion-title style="text-align:center">Health Chart</ion-title>
+</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+<ion-item>
+<ion-label floating>Blood Group</ion-label>
+<ion-input [ngModel]="bg"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Previous disease</ion-label>
+<ion-input [ngModel]="pd"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Height</ion-label>
+<ion-input [ngModel]="height"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Weight</ion-label>
+<ion-input [ngModel]="weight"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>BMI</ion-label>
+<ion-input [ngModel]="bmi"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Any Allergies</ion-label>
+<ion-input [ngModel]="allergies"></ion-input>
+</ion-item>
+<ion-item>
+<ion-label floating>Heart diseases</ion-label>
+<ion-input [ngModel]="heart"></ion-input>
+</ion-item>
+<button ion-button full (click)="submit()">Submit</button>
+</ion-list>
+</ion-content>
